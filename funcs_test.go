@@ -6,9 +6,9 @@ import (
 )
 
 func TestCalculator(t *testing.T) {
-	sum := Calculator(7, 7)
-	if sum != 7 {
-		t.Error("7 was expected and we obtained", sum)
+	calc := Calculator(7, 7)
+	if calc != 7 {
+		t.Error("7 was expected and we obtained", calc)
 	}
 
 	fmt.Println("Test of successful sum")
@@ -32,4 +32,13 @@ func TestConditionals(t *testing.T) {
 	if frac := a / b; frac > 0.5 {
 		fmt.Println("a is more than half of b")
 	}
+}
+
+func TestAverage(t *testing.T) {
+	average := Average(7, 7)
+	if average != 7 {
+		t.Error("expected 7 but obtained", average)
+	}
+
+	fmt.Println("Successful average test")
 }

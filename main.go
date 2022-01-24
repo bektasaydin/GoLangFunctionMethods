@@ -117,3 +117,8 @@ func ExStringFormat(x string) string {
 
 	return x
 }
+
+func Average(number1, number2 int) (result int) {
+	result = (number1 + number2) / 2
+	return
+}
